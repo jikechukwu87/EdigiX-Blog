@@ -26,11 +26,13 @@ header{
     padding: 20px;
     background-color: green;
     border-bottom: 2px solid darkblue;
-    position:relative;
+   
+    flex-wrap: wrap;
 }
 
 ul{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 10px;
     align-items: center;
@@ -42,11 +44,15 @@ ul{
     padding: 20px;
 }
 
+/* where the content to be posted is written */
+
 #post{
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 100px;
     border-radius: 20px;
     padding: 20px;
+    align-items: center;
 
 }
 
@@ -60,6 +66,7 @@ ul{
     text-align: center;
     padding: 20px;
     color: black;
+    margin: 20px;
 }
 
 #post_button{
@@ -69,10 +76,14 @@ ul{
     background-color: darkblue;
     color: white;
     margin-top: 10px;
-    margin-bottom: 70px;
+    margin-bottom: 10vh;
 }
 
+
+/* where the post renders */
+
 .text_area{
+    /* width: 90%; */
     text-align: center;
     background-color: bisque;
     max-width: 500px;
@@ -92,9 +103,9 @@ footer{
     text-align: center;
     background-color: green;
     color: white;
-    padding: 20px;
+    padding: 30px;
     border-top: 2px solid darkblue;
-    margin-top: 80px;
+    margin-top: 10vh;
     /* position: static; */
     
 }
