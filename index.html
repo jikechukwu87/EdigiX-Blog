@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-Blog</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="logo">
+          <img src="DigiStood logo.jpeg" alt="Edigix Logo" />
+          <h1>EdigiX Blog</h1>
+        </div>
+        <ul>
+          <li>home</li>
+          <li>contact</li>
+          <li>services</li>
+          <li>about us</li>
+        </ul>
+      </header>
+      <div id="hero">
+        <h1>Our Blog Posts</h1>
+      </div>
+
+       <div class="posted_environment">
+        <div class="text_area">
+          <!-- Posts render here dynamically via JS -->
+        </div>
+      </div>
+
+      <section class="my-blog-post">
+        <label for="post"></label><br />
+        <textarea
+          name="post"
+          id="post"
+          placeholder="Write your blog post..."
+        ></textarea>
+        <br />
+        <button id="post_button">Post</button>
+      </section>
+
+      <footer>
+        <p>EdigiX</p>
+      </footer>
+
+     
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
